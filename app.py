@@ -17,7 +17,7 @@ from nltk.tokenize import word_tokenize
 
 nltk.download('punkt')
 
-with open('./files/word_indexes_tokenizer_787.pickle','rb') as f:
+with open('./files/<YOUR TOKENIZER FILE>','rb') as f:
   tokenizer = pickle.load(f)
 
 
@@ -63,7 +63,7 @@ def prepare_data(single_data_):
 """#The Flask Server"""
 
 print('Starting Server')
-model = tf.keras.models.load_model('./files/Essay_Grader_787_Format2')
+model = tf.keras.models.load_model('./files/<YOUR SAVED MODEL>')
     
 # app
 app = Flask(__name__)
