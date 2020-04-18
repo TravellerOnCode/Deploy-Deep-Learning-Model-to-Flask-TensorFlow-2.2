@@ -1,0 +1,4 @@
+This File will contain 
+
+1. Tokenizer File
+2. The trained model saved in "Saved_Model" or ".h5" Format
